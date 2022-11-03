@@ -6,8 +6,6 @@ public class ScoreToAge {
     private static final int minScore = 1;
     private static final int maxScore = 13;
     private static final String maxAgeRange = "18-22";
-
-
     private static final Map<Integer, String> scoreToAge;
 
     static {

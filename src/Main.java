@@ -3,7 +3,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
-
 public class Main {
 
     private static String loadFileContentToString(String path) throws IOException {
@@ -13,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
+
             String fileContent = loadFileContentToString(args[0]);
 
             TextProcessor textProcessor = new TextProcessor(fileContent);

@@ -28,11 +28,9 @@ class TextProcessor {
     }
 
     private static int countPolysyllables(String fileContent) {
-
         return (int) Arrays.stream(fileContent.split("\\s+"))
                 .filter(word -> Pattern.compile(Regex.syllables).matcher(word).results().count() >= polysyllablesMin)
                 .count();
-
     }
 
     private static int countSentences(String fileContent) {
@@ -80,7 +78,6 @@ class TextProcessor {
         final int totalNumOfIndexes = 4;
         return (double) sumOfAges / totalNumOfIndexes;
     }
-
 
     private String extractSummary(String nameOfScore) {
         Score index = Score.getIndex(nameOfScore, textStats);
